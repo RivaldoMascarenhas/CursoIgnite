@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -16,6 +20,20 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src",
+    "src/components/main.tsxonents/main.tsx",
+    "src/components/main.tsxonents/main.tsx",
+    "src/components/App.tsxponents/App.tsx",
+    "src/components/App.tsxponents/App.tsx",
+    "src/main.tsx.tsx",
+    "src/main.tsx.tsx",
+    "src/App.tsx.tsx",
+    "src/App.tsx.tsx"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }
