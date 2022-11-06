@@ -36,7 +36,9 @@ interface CyclesContextProviderProps {
   children: ReactNode
 }
 
-export function CycleContextProvider({ children }: CyclesContextProviderProps) {
+export function CyclesContextProvider({
+  children,
+}: CyclesContextProviderProps) {
   const [cyclesState, dispatch] = useReducer(
     cycleRedurcer,
     {
@@ -49,6 +51,10 @@ export function CycleContextProvider({ children }: CyclesContextProviderProps) {
       )
       if (storedStateAsJSON) {
         return JSON.parse(storedStateAsJSON)
+      }
+      return {
+        cycles: [],
+        activeCycleId: null,
       }
     },
   )

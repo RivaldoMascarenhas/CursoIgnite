@@ -7,15 +7,15 @@ import { GlobalStyle } from './styles/Global'
 import { Router } from './router'
 
 import { BrowserRouter } from 'react-router-dom'
-import { CycleContextProvider } from './contexts/CyclesContext'
+import { CyclesContextProvider } from './contexts/CyclesContext'
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
-        <CycleContextProvider>
+        <CyclesContextProvider>
           <Router />
-        </CycleContextProvider>
+        </CyclesContextProvider>
       </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
